@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author SkyDuDe
  */
-public class Formandos2 {
+public class Main {
 
     static Continuar continuar = new Continuar();
     static Scanner sc = new Scanner(System.in);
