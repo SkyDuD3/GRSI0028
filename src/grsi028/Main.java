@@ -474,7 +474,7 @@ public class Main {
     
 // Opções do menu Inscrição de disciplinas//
     private static void registarDisciplinaCurso() {
-        if (lista2.size() == 0 || lista3.size() == 0) {
+        if (lista1.size() == 0 || lista2.size() == 0) {
             System.out.println("Inexistencia de um campo");
         } else {
             do {
@@ -494,14 +494,14 @@ public class Main {
 
     private static void removerDisciplinaCurso() {
         DisciplinasCursos disciplinascursos = new DisciplinasCursos();
-        if (lista2.size() == 0 || lista3.size() == 0) {
+        if (lista1.size() == 0 || lista2.size() == 0) {
             System.out.println("Inexistencia de um campo");
         } else {
             System.out.println("ID da Disciplina:");
             int id = sc.nextInt();
             try {//try para dar reset ao ID unico em caso de eliminação para não bugar
                 sc = new Scanner(System.in);
-                lista4.remove(id - 1);
+                lista4.remove(id - 2);
                 idDisciplina = 2;
                 int j = lista4.size();
                 for (int x = 2; x < j + 1; x++) {
